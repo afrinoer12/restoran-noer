@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RestoNoer - Website Restoran</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header" id="home">
+    <nav class="navbar">
+      <a href="#home" class="logo"><span>Resto</span>Noer</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="badge">Nikmat • Hangat • Berkesan</p>
+        <h1>Rasakan Cita Rasa Terbaik di <span>RestoNoer</span></h1>
+        <p class="hero-desc">
+          Tempat makan nyaman dengan hidangan lezat, harga bersahabat, dan pelayanan ramah untuk keluarga, teman, maupun pasangan.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn primary">Lihat Menu</a>
+          <a href="#contact" class="btn secondary">Reservasi</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" alt="Makanan restoran" />
+        <div class="floating-card">
+          <strong>Rating 4.9</strong>
+          <span>500+ pelanggan puas</span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="stats-section">
+      <div class="stat-card">
+        <h3>50+</h3>
+        <p>Menu Pilihan</p>
+      </div>
+      <div class="stat-card">
+        <h3>4.9</h3>
+        <p>Rating Pelanggan</p>
+      </div>
+      <div class="stat-card">
+        <h3>08:00</h3>
+        <p>Buka Setiap Hari</p>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="section-title">
+        <p>Menu Favorit</p>
+        <h2>Pilih Hidangan Terbaikmu</h2>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">Semua</button>
+        <button class="filter-btn" data-category="Makanan">Makanan</button>
+        <button class="filter-btn" data-category="Minuman">Minuman</button>
+        <button class="filter-btn" data-category="Dessert">Dessert</button>
+      </div>
+
+      <div class="menu-layout">
+        <div class="menu-grid" id="menuGrid"></div>
+
+        <aside class="cart-box">
+          <h3>Keranjang Pesanan</h3>
+          <div id="cartItems" class="cart-items">
+            <p class="empty-cart">Belum ada pesanan.</p>
+          </div>
+          <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">Rp0</strong>
+          </div>
+          <button class="checkout-btn" id="checkoutBtn">Checkout WhatsApp</button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Interior restoran" />
+      </div>
+      <div class="about-content">
+        <p class="section-label">Tentang Kami</p>
+        <h2>Restoran Nyaman dengan Rasa yang Selalu Dirindukan</h2>
+        <p>
+          RestoNoer hadir untuk memberikan pengalaman makan yang hangat, bersih, dan menyenangkan. Kami menyajikan makanan berkualitas dengan bahan pilihan dan racikan bumbu terbaik.
+        </p>
+        <div class="about-list">
+          <span>✓ Bahan segar setiap hari</span>
+          <span>✓ Tempat nyaman dan bersih</span>
+          <span>✓ Cocok untuk keluarga</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-title">
+        <p>Galeri</p>
+        <h2>Suasana & Hidangan Kami</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" alt="Galeri makanan 1" />
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80" alt="Galeri restoran" />
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=700&q=80" alt="Galeri makanan 2" />
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Galeri salad" />
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="section-label">Kontak</p>
+        <h2>Reservasi atau Pesan Sekarang</h2>
+        <p>Hubungi kami untuk pemesanan, reservasi meja, atau informasi menu terbaru.</p>
+      </div>
+      <div class="contact-card">
+        <p><strong>Alamat:</strong> Jl. Kuliner No. 12, Padang</p>
+        <p><strong>Jam Buka:</strong> 08.00 - 22.00 WIB</p>
+        <p><strong>WhatsApp:</strong> 085265818793</p>
+        <a href="https://wa.me/6285265818793" target="_blank" class="btn primary full">Chat WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 RestoNoer. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
